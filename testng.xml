@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Headless Browser Demo" verbose="10" parallel="false" thread-count="1">
+
+    <test name="Open Step2QA in Headless PhantomJS.">
+        <classes>
+            <class name="com.step2qa.HeadlessPhantomJS">
+                <methods>
+                    <include name="open_headless_phantomJS"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Open Step2QA in Headless Google Chrome.">
+        <classes>
+            <class name="com.step2qa.HeadlessChrome">
+                <methods>
+                    <include name="open_headless_chrome"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Open Step2QA in Headless Mozilla Firefox.">
+        <classes>
+            <class name="com.step2qa.HeadlessFirefox">
+                <methods>
+                    <include name="open_headless_firefox"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
